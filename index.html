@@ -5,7 +5,7 @@
   <title>ScroogeFrog</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230819130431">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230819174755">
   <link rel="shortcut icon" href="img/favicon.png">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,46 +16,40 @@
   <div class="wrapper">
     <main class="page">
       <section class="hero">
-        <header class="header">
+        <header class="header" data-da=".page, 992, 0">
           <div class="header__top top-header">
             <div class="top-header__container">
-              <div class="top-header__descr">CONTACT US TO GET TRUST AGENCY ACCOUNTS</div>
+              <div class="top-header__descr">CONTACT US TO GET TRUST AGENCY ACCOUNTS</div>
             </div>
           </div>
           <div class="header__bottom bottom-header">
             <div class="bottom-header__container">
-              <div class="bottom-header__wrapper">
-                <a class="bottom-header__logo" href="">
+              <div class="bottom-header__wrapper" data-spollers>
+                <a class="bottom-header__logo" target="_blank" href="http://agency.scroogefrog.com/">
                   <img src="img/logo.svg" width="405" height="48" alt="ScroogeFrog Agency logotype">
                 </a>
+                <button class="bottom-header__icon icon-menu" data-spoller="992,max" type="button" aria-label="Open menu">
+                  <span></span>
+                </button>
                 <div class="bottom-header__menu menu">
                   <nav class="menu__body">
                     <ul class="menu__list">
                       <li class="menu__item">
-                        <a class="menu__link" href="">About service</a>
+                        <a class="menu__link" href="#services">About service</a>
                       <li class="menu__item">
-                        <a class="menu__link" href="">Verticals</a>
+                        <a class="menu__link" href="#verticals">Verticals</a>
                       <li class="menu__item">
-                        <a class="menu__link" href="">Benefits</a>
+                        <a class="menu__link" href="#benefits">Benefits</a>
                       <li class="menu__item">
-                        <a class="menu__link" href="">Our sales manager</a>
+                        <a class="menu__link" href="#managers">Our sales manager</a>
                     </ul>
                   </nav>
                 </div>
-                <button class="bottom-header__icon icon-menu" type="button" aria-label="Open menu">
-                  <span></span>
-                </button>
               </div>
             </div>
           </div>
         </header>
         <div class="hero__container">
-          <div class="hero__image">
-            <picture>
-              <source srcset="img/hero/icon.webp" type="image/webp">
-              <img src="img/hero/icon.png" width="280" height="223" alt="">
-            </picture>
-          </div>
           <h1 class="hero__title">Agency Accounts for Sale —
             <span>Expand Your</span>
             <span class="business"> Business</span> with Us!
@@ -64,9 +58,10 @@
             <a class="hero__btn btn" href="">CONTACT US</a>
           </div>
         </div>
-        <video class="hero__bg" autoplay loop muted playsinline src="files/video.mp4"></video>
+        <video class="hero__bg hero__bg_pc" autoplay loop muted playsinline src="files/video.mp4"></video>
+        <video class="hero__bg hero__bg_mob" autoplay loop muted playsinline src="files/video-mob.mp4"></video>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__container">
           <h2 class="services__title title">About service provider ScroogeFrog</h2>
           <ul class="services__columns">
@@ -168,7 +163,7 @@
           </div>
         </div>
       </section>
-      <section class="verticals">
+      <section class="verticals" id="verticals">
         <div class="verticals__container">
           <h2 class="verticals__title title">Verticals</h2>
           <h3 class="verticals__subtitle">We work with various verticals:</h3>
@@ -300,7 +295,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="benefits__container">
           <div class="benefits__header">
             <h2 class="benefits__title">Benefits</h2>
@@ -438,7 +433,7 @@
           </div>
         </div>
       </section>
-      <section class="managers">
+      <section class="managers" id="managers">
         <div class="managers__container">
           <h2 class="managers__title title">
             <span></span>OUR SALES MANAGERS
@@ -504,8 +499,8 @@
       <div class="footer__container">
         <div class="footer__wrapper">
           <div class="footer__logo-wrapper">
-            <a class="footer__logo" href="">
-              <img src="img/logo.svg" alt="ScroogeFrog Agency logotype">
+            <a class="footer__logo" target="_blank" href="http://agency.scroogefrog.com/">
+              <img src="img/logo.svg" width="306" height="36" alt="ScroogeFrog Agency logotype">
             </a>
           </div>
           <div class="footer__contacts contact-footer">
@@ -580,7 +575,7 @@
     </footer>
   </div>
 
-  <script src="js/app.min.js?_v=20230819130431"></script>
+  <script src="js/app.min.js?_v=20230819174755"></script>
 
 </body>
 
