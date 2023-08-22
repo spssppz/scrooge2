@@ -1992,6 +1992,7 @@ body {
 
   .hero__title {
     font-size: 2.25rem;
+    font-size: 2.0625rem;
   }
 
   .hero__title span.business {
@@ -2000,13 +2001,17 @@ body {
 
   .hero__title span::after {
     height: 0.6875rem;
+    bottom: 0.3125rem;
   }
 
   .hero__btn::before {
-    left: 95%;
-    -webkit-transform: rotate(-15deg);
-        -ms-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+    left: 100%;
+    top: -2.5rem;
+    -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotate(4deg);
+    width: 3.75rem;
+    height: 4.125rem;
   }
 
   .benefits__header {
