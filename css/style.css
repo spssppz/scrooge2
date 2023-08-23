@@ -248,6 +248,8 @@ body {
 
 .menu__link {
   font-size: 1.125rem;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .footer {
@@ -323,6 +325,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .contact-footer__link::before {
@@ -387,6 +391,15 @@ body {
   margin-right: 1.875rem;
 }
 
+.right-footer__social-link {
+  font-size: 0;
+}
+
+.right-footer__social-link svg path {
+  -webkit-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
+}
+
 .right-footer__descr {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
@@ -444,6 +457,19 @@ body {
   margin-bottom: 3.75rem;
 }
 
+.no-webp .hero__title::after {
+  background: url("../img/hero/dot.png") 50%/100% no-repeat; }
+
+.hero__title::after {
+  content: "";
+  position: absolute;
+  right: -3.375rem;
+  pointer-events: none;
+  bottom: -1.875rem;
+  width: 8.25rem;
+  height: 5rem;
+}
+
 .hero__title span {
   position: relative;
 }
@@ -465,6 +491,10 @@ body {
 
 .hero__btn {
   position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
 .no-webp .hero__btn::before {
@@ -474,6 +504,8 @@ body {
   content: "";
   width: 4.75rem;
   height: 5.1875rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   position: absolute;
   top: -3.125rem;
   left: calc(100% + 1.25rem);
@@ -806,6 +838,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 11.6875rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1188,6 +1221,14 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.column-managers__btn::after {
+  display: none;
 }
 
 @media (min-width: 29.99875em) {
@@ -1273,18 +1314,6 @@ body {
 }
 
 @media (min-width: 78.75em) {
-  .no-webp .hero__title::after {
-    background: url("../img/hero/dot.png") 50%/100% no-repeat; }
-  .hero__title::after {
-    content: "";
-    position: absolute;
-    right: -3.375rem;
-    pointer-events: none;
-    bottom: -1.875rem;
-    width: 8.25rem;
-    height: 5rem;
-  }
-
   .accounts__label {
     margin-right: 3.125rem;
   }
@@ -1323,6 +1352,10 @@ body {
 
   .menu__link {
     font-size: 1rem;
+  }
+
+  .hero__title::after {
+    display: none;
   }
 
   .benefits__header {
@@ -1827,13 +1860,13 @@ body {
     font-size: 2.5rem;
   }
 
+  .hero__title span::after {
+    height: 0.6875rem;
+  }
+
   .hero__title span.business {
     display: inline-block;
     margin-left: 1.6875rem;
-  }
-
-  .hero__title span::after {
-    height: 0.6875rem;
   }
 
   .benefits__header {
@@ -2013,17 +2046,16 @@ body {
   }
 
   .hero__title {
-    font-size: 2.25rem;
     font-size: 2.0625rem;
-  }
-
-  .hero__title span.business {
-    margin-left: 0;
   }
 
   .hero__title span::after {
     height: 0.5625rem;
     bottom: 0.3125rem;
+  }
+
+  .hero__title span.business {
+    margin-left: 0;
   }
 
   .hero__btn::before {
@@ -2437,7 +2469,41 @@ body {
   }
 }
 
+@media (any-hover: hover) {
+  .menu__link:hover {
+    color: #6fbe3e;
+  }
+
+  .contact-footer__link:hover {
+    color: #6fbe3e;
+  }
+
+  .right-footer__social-link:hover svg path {
+    fill: #6fbe3e;
+  }
+
+  .hero__btn:hover {
+    -webkit-transform: translate(0rem, -0.4375rem);
+        -ms-transform: translate(0rem, -0.4375rem);
+            transform: translate(0rem, -0.4375rem);
+  }
+
+  .hero__btn:hover::before {
+    -webkit-transform: translate(0rem, 0.4375rem);
+        -ms-transform: translate(0rem, 0.4375rem);
+            transform: translate(0rem, 0.4375rem);
+  }
+
+  .column-managers__btn:hover {
+    -webkit-transform: translate(0rem, -0.4375rem);
+        -ms-transform: translate(0rem, -0.4375rem);
+            transform: translate(0rem, -0.4375rem);
+  }
+}
+
 .webp .footer::after { background: url(../img/bgs/footer.webp) 50% 0/cover no-repeat; }
+
+.webp .hero__title::after { background: url(../img/hero/dot.webp) 50%/100% no-repeat; }
 
 .webp .hero__btn::before { background: url(../img/hero/arrow.webp) 50%/100% no-repeat; }
 
@@ -2454,11 +2520,6 @@ body {
 .webp .managers__title span { background: url(../img/managers/lines.webp) 50%/100% no-repeat; }
 
 .webp .managers__title::before, .webp .managers__title::after { background: url(../img/managers/arrow.webp) 50%/100% no-repeat; }
-
-@media (min-width: 78.75em) {
-
-  .webp .hero__title::after { background: url(../img/hero/dot.webp) 50%/100% no-repeat; }
-}
 
 @media (max-width: 29.99875em) {
 
