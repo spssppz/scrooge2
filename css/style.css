@@ -477,6 +477,7 @@ body {
   position: absolute;
   top: -3.125rem;
   left: calc(100% + 1.25rem);
+  pointer-events: none;
 }
 
 .benefits {
