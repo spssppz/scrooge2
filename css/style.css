@@ -450,6 +450,28 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__toad {
+  max-width: 21.25rem;
+}
+
+.hero__toad img {
+  width: 100%;
+}
+
+.hero__toad:not(:last-child) {
+  margin-bottom: 1.875rem;
 }
 
 .hero__title {
@@ -1572,7 +1594,7 @@ body {
 
   .hero {
     min-height: 46.25rem;
-    padding: 13.75rem 0 3.125rem;
+    padding: 0 0 3.125rem;
   }
 
   .hero__title {
@@ -1865,7 +1887,7 @@ body {
   }
 
   .hero {
-    padding: 13.75rem 0 1.875rem;
+    padding: 0 0 1.875rem;
   }
 
   .hero__title {
