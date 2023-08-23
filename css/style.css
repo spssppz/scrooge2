@@ -214,6 +214,14 @@ body {
   position: relative;
 }
 
+.show-menu .bottom-header {
+  position: fixed;
+  top: 1.25rem;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
 .bottom-header__wrapper {
   background: rgba(125, 125, 125, 0.1);
   padding: 1rem 1.875rem;
@@ -1460,6 +1468,10 @@ body {
   .top-header {
     margin-bottom: 0;
     padding: 0.4375rem 0rem;
+  }
+
+  .show-menu .bottom-header {
+    top: 0;
   }
 
   .bottom-header__wrapper {
