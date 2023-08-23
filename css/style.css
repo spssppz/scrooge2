@@ -437,6 +437,7 @@ body {
   margin: 0 auto;
   font-weight: 900;
   line-height: normal;
+  position: relative;
 }
 
 .hero__title:not(:last-child) {
@@ -450,12 +451,12 @@ body {
 .hero__title span::after {
   content: "";
   position: absolute;
-  bottom: 0.6875rem;
+  bottom: 0.5625rem;
   z-index: -1;
   left: 0;
   width: 100%;
   background: #81bd52;
-  height: 1.0625rem;
+  height: 0.9375rem;
 }
 
 .hero__btn-wrapper {
@@ -599,6 +600,7 @@ body {
           align-items: center;
   min-height: 8.3125rem;
   max-width: 24.3125rem;
+  padding-right: 0.625rem;
 }
 
 .left-benefits__column:not(:last-child) {
@@ -625,16 +627,22 @@ body {
   height: auto;
 }
 
+.left-benefits__icon_2 {
+  margin-right: 0.625rem;
+}
+
 .left-benefits__label {
   line-height: normal;
 }
 
 .left-benefits__text {
   font-size: 2.25rem;
+  line-height: normal;
 }
 
 .left-benefits__descr {
   font-size: 3rem;
+  line-height: normal;
 }
 
 .right-benefits {
@@ -1264,6 +1272,18 @@ body {
 }
 
 @media (min-width: 78.75em) {
+  .no-webp .hero__title::after {
+    background: url("../img/hero/dot.png") 50%/100% no-repeat; }
+  .hero__title::after {
+    content: "";
+    position: absolute;
+    right: -3.375rem;
+    pointer-events: none;
+    bottom: -1.875rem;
+    width: 8.25rem;
+    height: 5rem;
+  }
+
   .accounts__label {
     margin-right: 3.125rem;
   }
@@ -1518,7 +1538,7 @@ body {
   }
 
   .hero__title span::after {
-    height: 0.9375rem;
+    height: 0.8125rem;
   }
 
   .benefits__header {
@@ -1547,6 +1567,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     min-height: 21.9375rem;
+    padding-right: 0;
   }
 
   .left-benefits__label {
@@ -1811,7 +1832,7 @@ body {
   }
 
   .hero__title span::after {
-    height: 0.8125rem;
+    height: 0.6875rem;
   }
 
   .benefits__header {
@@ -2000,7 +2021,7 @@ body {
   }
 
   .hero__title span::after {
-    height: 0.6875rem;
+    height: 0.5625rem;
     bottom: 0.3125rem;
   }
 
@@ -2073,14 +2094,16 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding: 0rem 0rem 1.25rem 1.875rem;
+    padding: 0rem 0rem 2.75rem 1.875rem;
     position: relative;
     background: none;
-    overflow: hidden;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
     margin-top: -2.8125rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .no-webp .left-benefits__column_3::after {
@@ -2094,6 +2117,8 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: -1;
+    border-radius: 1.25rem;
   }
 
   .left-benefits__icon_1 {
@@ -2108,10 +2133,15 @@ body {
     height: 6.375rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-top: -1.6875rem;
   }
 
   .left-benefits__label {
     font-size: 1rem;
+  }
+
+  .left-benefits__label_2 {
+    max-width: 10rem;
   }
 
   .left-benefits__text {
@@ -2336,6 +2366,7 @@ body {
   }
 
   .left-benefits__column_3 {
+    padding: 0rem 0rem 1.875rem 1.875rem;
     min-height: 8.125rem;
   }
 }
@@ -2422,6 +2453,11 @@ body {
 .webp .managers__title span { background: url(../img/managers/lines.webp) 50%/100% no-repeat; }
 
 .webp .managers__title::before, .webp .managers__title::after { background: url(../img/managers/arrow.webp) 50%/100% no-repeat; }
+
+@media (min-width: 78.75em) {
+
+  .webp .hero__title::after { background: url(../img/hero/dot.webp) 50%/100% no-repeat; }
+}
 
 @media (max-width: 29.99875em) {
 
