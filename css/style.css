@@ -2075,10 +2075,6 @@ body {
     top: 0.8125rem;
   }
 
-  .hero__bg_pc {
-    display: none;
-  }
-
   .hero__title {
     font-size: 2.0625rem;
   }
