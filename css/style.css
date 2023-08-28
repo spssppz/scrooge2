@@ -468,6 +468,7 @@ body {
 
 .hero__toad img {
   width: 100%;
+  height: auto;
 }
 
 .hero__toad:not(:last-child) {
