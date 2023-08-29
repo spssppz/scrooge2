@@ -2089,7 +2089,7 @@ body {
   .benefits__header {
     display: block;
     text-align: center;
-    padding: 0.875rem 1.25rem;
+    padding: 0.875rem 2.5rem;
   }
 
   .benefits__title {
@@ -2405,6 +2405,10 @@ body {
 }
 
 @media (max-width: 26.56125em) {
+  .benefits__header {
+    padding: 0.875rem 1.25rem;
+  }
+
   .left-benefits__column_2 {
     min-height: 7.125rem;
   }
