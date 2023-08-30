@@ -431,9 +431,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__bg {
@@ -460,19 +460,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hero__toad {
-  max-width: 18.75rem;
-}
-
-.hero__toad img {
-  width: 100%;
-  height: auto;
-}
-
-.hero__toad:not(:last-child) {
-  margin-bottom: 1.875rem;
 }
 
 .hero__title {
