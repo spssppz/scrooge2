@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-  <title>ScroogeFrog</title>
+  <title>Главная</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230905172447">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231112131006">
   <link rel="shortcut icon" href="img/favicon.png">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,677 +14,506 @@
 <body>
 
   <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo header__logo_pc" href="">
+          <picture>
+            <source srcset="img/logo.webp, img/logo@2x.webp 2x" type="image/webp">
+            <img srcset="img/logo@2x.png 2x" src="img/logo.png" width="284" height="42" alt="">
+          </picture>
+        </a>
+        <a class="header__logo header__logo_mob" href="">
+          <picture>
+            <source srcset="img/logo-mob.webp, img/logo-mob@2x.webp 2x" type="image/webp">
+            <img srcset="img/logo-mob@2x.png 2x" src="img/logo-mob.png" width="141" height="34" alt="">
+          </picture>
+        </a>
+        <div class="header__btns">
+          <button class="header__btn header__btn_price">Ціни</button>
+          <button class="header__btn">
+            <img src="img/icons/calendar.svg" width="21" height="21" alt="">
+          </button>
+        </div>
+        <div class="header__menu menu">
+          <button class="menu__icon icon-menu" aria-label="Відкрити меню">
+            <span></span>
+          </button>
+          <nav class="menu__body">
+            <span class="menu__decor menu__decor_1"></span>
+            <span class="menu__decor menu__decor_2"></span>
+            <span class="menu__decor menu__decor_3"></span>
+            <ul class="menu__list">
+              <li class="menu__item menu__item_current">
+                <a class="menu__link" href="">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Ціни та акції</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Колектив</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Про нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="header__callback" data-da=".menu__body, 991, 0">Записатися на прийом</button>
+      </div>
+    </header>
     <main class="page">
-      <section class="hero">
-        <header class="header" data-da=".page, 992, 0">
-          <div class="header__top top-header">
-            <div class="top-header__container">
-              <a class="top-header__descr" href="#managers">CONTACT US TO GET TRUE AGENCY ACCOUNTS</a>
-            </div>
-          </div>
-          <div class="header__bottom bottom-header">
-            <div class="bottom-header__container">
-              <div class="bottom-header__wrapper" data-spollers>
-                <a class="bottom-header__logo" target="_blank" href="http://agency.scroogefrog.com/">
-                  <img src="img/logo.svg" width="405" height="48" alt="ScroogeFrog Agency logotype">
-                </a>
-                <button class="bottom-header__icon icon-menu" data-spoller="992,max" type="button"
-                  aria-label="Open menu">
-                  <span></span>
-                </button>
-                <div class="bottom-header__menu menu">
-                  <nav class="menu__body">
-                    <ul class="menu__list">
-                      <li class="menu__item">
-                        <a class="menu__link" href="#services">About service</a>
-                      <li class="menu__item">
-                        <a class="menu__link" href="#verticals">Verticals</a>
-                      <li class="menu__item">
-                        <a class="menu__link" href="#benefits">Benefits</a>
-                      <li class="menu__item">
-                        <a class="menu__link" href="#managers">Contacts</a>
-                    </ul>
-                  </nav>
-                </div>
+      <section class="about">
+        <div class="about__container">
+          <ul class="about__columns">
+            <li class="about__column column-about">
+              <div class="column-about__content">
+                <h2 class="column-about__title">
+                  «Futurum Dentistry» — стоматологія майбутнього
+                </h2>
+                <p class="column-about__text">Чому саме ми стоматологія майбутнього?</p>
+                <p class="column-about__text">
+                  Все просто: у нашій клініці стоматологи використовують протоколи лікування, запроваджені провідними
+                  спеціалістами та перевіреними системою доказової медицини.
+                  Ми використовуємо тільки найякісніші матеріали виробництва Японії та США, а технічне бладнання відповідає
+                  рівню кращих стоматологічних клінік світу. Наприклад, замість зняття відбитків зубів — ми їх скануємо
+                  спеціальним внутрішньоротовим 3D сканером, а замість відливання моделей щелеп з гіпсу — ми роздруковуємо їх
+                  на
+                  надточному 3D принтері.
+                </p>
               </div>
-            </div>
-          </div>
-        </header>
-        <div class="hero__container">
-          <h1 class="hero__title">Agency Accounts for Sale —
-            <span>Expand Your </span>
-            <span class="business">Business</span> with Us!
-          </h1>
-          <div class="hero__btn-wrapper">
-            <a class="hero__btn btn" href="#managers">CONTACT US</a>
-          </div>
-        </div>
-        <video class="hero__bg" autoplay loop muted playsinline src="files/hero-bg.MP4"></video>
-      </section>
-      <section class="services" id="services">
-        <div class="services__container">
-          <h2 class="services__title title">About service provider ScroogeFrog</h2>
-          <ul class="services__columns">
-            <li class="services__column services__column_green">
-              <div class="services__icon">
+              <div class="column-about__image">
                 <picture>
-                  <source srcset="img/services/02.webp" type="image/webp">
-                  <img src="img/services/02.png" width="186" height="187" alt="">
+                  <source srcset="img/about/01.webp, img/about/01@2x.webp" type="image/webp">
+                  <img srcset="img/about/01@2x.png" src="img/about/01.png" width="503" height="459" alt="">
                 </picture>
-              </div>
-              <div class="services__descr">
-                <span>Self service</span>, we provide agency accounts in Google Ads, TikTok Ads, Facebook Ads, Bing Ads
-                and other
-                platforms. The client manages advertising companies himself, and we help with easy ad moderation
               </div>
             </li>
-            <li class="services__column services__column_green">
-              <div class="services__icon">
+            <li class="about__column column-about">
+              <div class="column-about__content">
+                <p class="column-about__text">
+                  Наші кабінети обладнанні операційними мікроскопами, які дозволяють отримати х12 збільшення для того, щоб
+                  лікар міг помітити найменші деталі. Такі деталі роблять лікування в Futurum Dentistry дуже комфортними, але
+                  якщо ви все одно дуже хвилюєтесь, то для вас є послуга «Лікування уві сні», що перетворює найскладніші
+                  операції в можливість гарно виспатись, чого нам так зазвичай не вистачає.
+                </p>
+                <p class="column-about__text">
+                  Але найголовніше у нас — це відношення персоналу та лікарів до пацієнтів. Ви завжди залишаєтесь у хорошому
+                  настрої після відвідування клініки. Приходьте та переконайтесь у всьому самі!
+                </p>
+              </div>
+              <div class="column-about__image">
                 <picture>
-                  <source srcset="img/services/04.webp" type="image/webp">
-                  <img src="img/services/04.png" width="186" height="187" alt="">
+                  <source srcset="img/about/02.webp, img/about/02@2x.webp" type="image/webp">
+                  <img srcset="img/about/02@2x.png" src="img/about/02.png" width="529" height="407" alt="">
                 </picture>
-              </div>
-              <div class="services__descr">
-                <span>Full-service</span> agency solutions for Google Ads, TikTok Ads, Facebook Ads, Bing Ads and other
-                platforms. We
-                create, configure, optimize, manage ad accounts at all stages
-              </div>
-            </li>
-            <li class="services__column">
-              <div class="services__icon">
-                <picture>
-                  <source srcset="img/services/01.webp" type="image/webp">
-                  <img src="img/services/01.png" width="186" height="187" alt="">
-                </picture>
-              </div>
-              <div class="services__descr">
-                We are your partner in successful
-                <br> business development
-              </div>
-            </li>
-            <li class="services__column">
-              <div class="services__icon">
-                <picture>
-                  <source srcset="img/services/03.webp" type="image/webp">
-                  <img src="img/services/03.png" width="186" height="187" alt="">
-                </picture>
-              </div>
-              <div class="services__descr">
-                Our team is ready to share
-                <br>
-                their expertise and creative ideas
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="accounts">
-        <div class="accounts__container">
-          <h2 class="accounts__label">TRUE AGENCY ACCOUNTS</h2>
-          <div class="accounts__slider swiper">
-            <div class="accounts__wrapper swiper-wrapper">
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/01.webp" type="image/webp">
-                  <img src="img/accounts/01.png" width="276" height="104" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/02.webp" type="image/webp">
-                  <img src="img/accounts/02.png" width="130" height="130" alt="">
-                </picture>
-              </div>
-              <!-- <div class="accounts__slide swiper-slide">
-								<picture><source srcset="img/accounts/03.webp" type="image/webp"><img src="img/accounts/03.png" width="180" height="90" alt=""></picture>
-							</div> -->
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/04.webp" type="image/webp">
-                  <img src="img/accounts/04.png" width="122" height="68" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/05.webp" type="image/webp">
-                  <img src="img/accounts/05.png" width="180" height="32" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/06.webp" type="image/webp">
-                  <img src="img/accounts/06.png" width="296" height="155" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/07.webp" type="image/webp">
-                  <img src="img/accounts/07.png" width="266" height="100" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/08.webp" type="image/webp">
-                  <img src="img/accounts/08.png" width="215" height="42" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/09.webp" type="image/webp">
-                  <img src="img/accounts/09.png" width="151" height="37" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/10.webp" type="image/webp">
-                  <img src="img/accounts/10.png" width="181" height="60" alt="">
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="verticals" id="verticals">
-        <div class="verticals__container">
-          <h2 class="verticals__title title">Verticals</h2>
-          <h3 class="verticals__subtitle">We work with various verticals:</h3>
-          <ul class="verticals__columns">
-            <li class="verticals__column">
-              <div class="verticals__wrapper">
-                <div class="verticals__icon">
-                  <picture>
-                    <source srcset="img/verticals/01.webp" type="image/webp">
-                    <img src="img/verticals/01.png" width="124" height="130" alt="">
-                  </picture>
-                </div>
-              </div>
-              <h4 class="verticals__label">E-COMMERCE</h4>
+      <section class="team-main">
+        <div class="team-main__container">
+          <h2 class="team-main__title title">Наша команда</h2>
+          <ul class="team-main__columns">
+            <li class="team-main__column left-column-team">
+              <picture>
+                <source srcset="img/team/01.webp, img/team/01@2x.webp" type="image/webp">
+                <img srcset="img/team/01@2x.jpg" src="img/team/01.jpg" width="388" height="388" alt="">
+              </picture>
+              <div class="left-column-team__name">Бадалян Григор</div>
+              <div class="left-column-team__descr">Головний лікар стоматолог-хірург, ортопед</div>
             </li>
-            <li class="verticals__column">
-              <div class="verticals__wrapper">
-                <div class="verticals__icon">
-                  <picture>
-                    <source srcset="img/verticals/02.webp" type="image/webp">
-                    <img src="img/verticals/02.png" width="142" height="130" alt="">
-                  </picture>
-                </div>
-              </div>
-              <h4 class="verticals__label">OTHER WHITE B-HAT VERTICALS*</h4>
+            <li class="team-main__column left-column-team">
+              <picture>
+                <source srcset="img/team/03.webp, img/team/03@2x.webp" type="image/webp">
+                <img srcset="img/team/03@2x.jpg" src="img/team/03.jpg" width="388" height="388" alt="">
+              </picture>
+              <div class="left-column-team__name">Шапаренко Ігор</div>
+              <div class="left-column-team__descr">Лікар стоматолог терапевт, ендодонтист</div>
             </li>
-            <li class="verticals__column">
-              <div class="verticals__wrapper">
-                <div class="verticals__icon">
-                  <picture>
-                    <source srcset="img/verticals/03.webp" type="image/webp">
-                    <img src="img/verticals/03.png" width="133" height="130" alt="">
-                  </picture>
-                </div>
-              </div>
-              <h4 class="verticals__label">FINANCE</h4>
-            </li>
-            <li class="verticals__column">
-              <div class="verticals__wrapper">
-                <div class="verticals__icon">
-                  <picture>
-                    <source srcset="img/verticals/04.webp" type="image/webp">
-                    <img src="img/verticals/04.png" width="137" height="130" alt="">
-                  </picture>
-                </div>
-              </div>
-              <h4 class="verticals__label">INSURANCE</h4>
-            </li>
-            <li class="verticals__column">
-              <div class="verticals__wrapper">
-                <div class="verticals__icon">
-                  <picture>
-                    <source srcset="img/verticals/05.webp" type="image/webp">
-                    <img src="img/verticals/05.png" width="129" height="130" alt="">
-                  </picture>
-                </div>
-              </div>
-              <h4 class="verticals__label">ETC</h4>
+            <li class="team-main__column column-team-main">
+              <picture>
+                <source srcset="img/team/07.webp, img/team/07@2x.webp" type="image/webp">
+                <img srcset="img/team/07@2x.png" src="img/team/07.png" width="388" height="388" alt="">
+              </picture>
+              <a class="column-team-main__btn btn" href="">Записатися на прийом</a>
             </li>
           </ul>
-          <div class="verticals__bottom">
-            <a class="verticals__btn btn" href="#managers">CONTACT US</a>
+          <div class="team-main__bottom">
+            <p>Наша команда і весь персонал віддані своїй роботі. Будемо раді зустрічі з вами та вашою родиною. Гарантуємо, що
+              ви приємно здивуєтесь, а подальші стосунки будуть побудовані лише на довірі до нас. Наша професійна команда
+              захоплена своєю справою та прагне надати пацієнтам позитивний стоматологічний досвід. Ми розуміємо, що кожен
+              пацієнт унікальний і заслуговує якісної стоматологічної допомоги, яка відображає його індивідуальні потреби, а
+              стоматологія в Києві може бути доступною для кожного! Ваша посмішка буде ідеальною.</p>
           </div>
         </div>
       </section>
-      <section class="accounts">
-        <div class="accounts__container">
-          <h2 class="accounts__label">TRUE AGENCY ACCOUNTS</h2>
-          <div class="accounts__slider swiper">
-            <div class="accounts__wrapper swiper-wrapper">
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/01.webp" type="image/webp">
-                  <img src="img/accounts/01.png" width="276" height="104" alt="">
-                </picture>
+      <section class="services-main">
+        <div class="services-main__container">
+          <h2 class="services-main__title title">Широкий спектр послуг у сфері
+            як дорослої, так і дитячої стоматології</h2>
+          <ul class="services-main__spollers spollers" data-spollers>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Імплантація зубів
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Чистка зубів — важлива частина забезпечення гарної гігієни порожнини рота та його загального здоров’я в
+                  цілому. Процес чищення зубів можна пройти за кілька кроків: видалення зубного каменю і нальоту, ретельну
+                  поліровку зубів, чищення зубною ниткою, полоскання і застосування спеціальних паст. Ми забезпечуємо чистку
+                  зубів поруч з вами, аби ваша гігієна порожнини рота була бездоганною за рахунок відсутності бактерій, які
+                  можуть привести до захворювання пародонту.</p>
+                <p>В нашій стоматологічній клініці ми пропонуємо пацієнтам професійне чищення:</p>
+                <p>1. Видалення зубного каменю з поверхні зубів. Камінь представляє собою затверділий наліт, який важко
+                  видалити з поверхні зуба. Зубний камінь на зубах має тенденцію викликати запалення ясен (пародонтит), тому
+                  пародонтологія займається вирішенням таких проблем, або стоматит лікування якого потім буде нелбхідне.</p>
+                <p>2. Полірування зубів. Дозволяє видалити пігмент і наліт, які можуть залишитися на зубах після належного
+                  очищення.</p>
+                <p>3. Використання спеціальних паст. Спеціальний склад паст корисний для зубів, тому що він допомагає:
+                  відновлювати (ремінералізувати) ослаблену зубну емаль, уповільнювати втрату мінералів, запобігатиме
+                  зростанню шкідливих бактерій в порожнині рота.</p>
+                <p>Ми рекомендуємо проводити чистку раз на 6 місяців. Якщо з моменту останнього чищення зубів пройшло більше
+                  ніж пів року, призначте зустріч з нами!</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/02.webp" type="image/webp">
-                  <img src="img/accounts/02.png" width="130" height="130" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Пломбування зубів
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Зубні імплантати — це один з методів, який провідні стоматологи Києва використовують для відновлення
+                  зовнішнього вигляду та функціональності одного або декількох відсутніх зубів.</p>
+                <p>Що таке зубний імплант?</p>
+                <p>Ми пропонуємо дентальні імплантати, щоб замінити пошкоджені або відсутні зуби в роті. Вони виглядають,
+                  відчуваються т, а функціонують як природні зуби. Людина не тільки набуває виготовлені на замовлення змінні
+                  зуби, але також відновлює здатність їсти, пити і говорити без будь-яких незручностей. Зубний імплант
+                  складається з трьох частин, включаючи імплант, абатмент і коронку.</p>
+                <p>Імплантація зубів — процедура</p>
+                <p>Процес дентальної імплантації вимагає двох етапів до завершення.</p>
+                <p>1. Хірургічна фаза. Проводиться з використанням місцевої анестезії, яка повністю знеболює ротову порожнину
+                  при хірургічної установці імпланта в кісткову тканину.</p>
+                <p>Під час встановлення титанового імплантата використовується спеціальний інструмент для створення місця в
+                  кістковій тканині під лінією ясен. Після завершення процедури імплантації угвинчується формувач ясен в
+                  імплант, щоб забезпечити підтримку м’яких тканин навколо імпланта</p>
+                <p>Далі ясна закриваються, і їм потрібно буде зажити протягом декількох місяців, щоб забезпечити успішне
+                  зрощення імплантата з кісткою.</p>
+                <p>2. На другому етапі стоматолог знімає зліпок для створення коронки, яка діє як замісник зуба або зубів,
+                  якщо в роті міститься кілька імплантатів. Форма та посадка в роті будуть перевірені і відрегульовані, він
+                  зручно поміщається в зубний ряд.</p>
+                <p>Імплантологія достатньо розвинута наука, а матеріали, з яких виготовлений дентальний імплантат, довговічні
+                  та функціонують як природні зуби. При належному догляді зубної імплант може прослужити все життя.</p>
+                <p>Якщо вам не вистачає одного або декількох зубів і ви хочете поставити імплант у Києві, запишіться на
+                  безкоштовну консультацію до хірурга-стоматолога!</p>
               </div>
-              <!-- <div class="accounts__slide swiper-slide">
-								<picture><source srcset="img/accounts/03.webp" type="image/webp"><img src="img/accounts/03.png" width="180" height="90" alt=""></picture>
-							</div> -->
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/04.webp" type="image/webp">
-                  <img src="img/accounts/04.png" width="122" height="68" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Вініри
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Ми пропонуємо послуги пломбування зубів у Києві, щоб відновити пошкоджені зуби до їх нормальної форми та
+                  функцій. Реставрація зуба ізолює можливе проникнення бактерій та запобігає подальше руйнування. Його можна
+                  створити з різних матеріалів, таких як композитна смола або амальгама.</p>
+                <p>Тип пломби буде залежати від стану вашого зуба та безпосередньо рекомендацій стоматолога. Сама процедура
+                  пломбування зуба швидка та безболісна. Наші лікарі зможуть підібрати пломби, які будуть максимально
+                  наближені до природнього кольору ваших зубів. Матеріал пломби складається з композитних елементів, це
+                  речовини які можуть імітувати зносостійкість та прозорість природного зуба.</p>
+                <p>Процедура частіше за все проводиться з використанням місцевих анестетиків (знеболення), тому проходить
+                  лікування без болю і допомогає зберегти цілісність структури зуба. Але якщо вас турбує зубна біль, то
+                  пломбування зуба не вірішить проблему- в такому випадку необхідно лікувати кореневі канали, що дуже
+                  ускладнює завданя лікаря. Будь ласка, лікуйте зуби своєчасно, щоб уникнути ускладнень, які викликає карієс.
+                </p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/05.webp" type="image/webp">
-                  <img src="img/accounts/05.png" width="180" height="32" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Видалення зуба
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Наша стоматологічна клініка «Futurum Dentistry» пропонує як просте видалення зубів у Києві, так і складне
+                  хірургічне втручання. Така процедура зазвичай проводиться, у разі неможливості вилікувати зуб.</p>
+                <p>Видалення зубів Київ</p>
+                <p>Видалити зуб — це нескладна процедура. Її зазвичай рекомендують, коли у пацієнта є великі ушкодження в
+                  результаті карієсу, травми або інфекції, і його не можна врятувати за допомогою лікування кореневих каналів
+                  або будь-яких інших варіантів стоматологічного лікування.</p>
+                <p>Видалення зубів мудрості</p>
+                <p>Зуби мудрості — це останні корінні зуби, які розташовані на верхній та нижній щелепі і зазвичай
+                  прорізуються у віці від 16 до 20 років. Коли в роті недостатньо місця, вони не можуть правильно прорізатися.
+                  Це може спровокувати ряд проблем. Ми забезпечуємо видалення зуба мудрості швидко та якісно, щоб запобігти
+                  проблемам в майбутньому.</p>
+                <p>Причини видалення зубів мудрості</p>
+                <p>Не всі зуби мудрості вимагають видалення, однак зуби мудрості можна видалити, щоб запобігти:</p>
+                <p>1. Ушкодженню сусідніх зубів: другі корінні зуби — це зуби безпосередньо перед зубами мудрості. Зуби
+                  мудрості можуть викликати карієс, пародонтоз та навіть втрату кісткової маси.</p>
+                <p>2. Захворювання: кісти та пухлини можуть розвиватися в областях, що оточують зуби мудрості.</p>
+                <p>3. Інфекція: коли частинки їжі потрапляють під тканину ясен, може виникнути інфекція і викликати проблеми
+                  зі здоров’ям порожнини рота.</p>
+                <p>4. Зуби мудрості можуть чинити тиск на існуючі зуби і викликати зсув (скупченість або скручування).</p>
+                <p>Запишіться на прийом до нашого хірурга-стоматолога вже зараз, якщо у вас є які-небудь питання про видалення
+                  зубів.</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/06.webp" type="image/webp">
-                  <img src="img/accounts/06.png" width="296" height="155" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Вирівнювання зубів
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Стоматологічна клініка «Futurum Dentistry» пропонує послуги з вирівнювання зубів у Києві. Ми зможемо
+                  допомогти, якщо у вас:</p>
+                <p>— Проблеми із прикусом;</p>
+                <p>— Неправильне положення зубів;</p>
+                <p>— Наявність можливих ускладнень.</p>
+                <p>Процедура не вимагає ніякого додаткового знеболення та не завдає дискомфорту пацієнту. Наш професіональний
+                  лікар ортодонт у Києві проведе детальний огляд та надасть консультацію з приводу виправлення прикусу чи
+                  зміни положення зубів.</p>
+                <p>Первинний огляд дозволить скласти лікарю план лікування та рекомендації. На основі отриманої інформацію та
+                  зліпка зубів, лікар:</p>
+                <p>— Розробляє план лікування;</p>
+                <p>— Визначає вид вирівнювання;</p>
+                <p>— Визначає терміни етапів лікування;</p>
+                <p>— Складає вартість процедури.</p>
+                <p>Ви самі обираєте встановлювати встановити металеві брекети, чи можливо вам більше до вподоби керамічні
+                  брекети. Лікар врахує ваші побажання, а у разі складності вибору матеріалу, розповість про кожен тип окремо.
+                  Ціна брекетів індивідуальна, залежно від складності проблеми.</p>
+                <p>Якщо ви бажаєте вирівняти зуби — запищіться на консультацію до ортодонта!</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/07.webp" type="image/webp">
-                  <img src="img/accounts/07.png" width="266" height="100" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Відбілювання зубів
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Відбілювання зубів включає в себе процес освітлення зубів за допомогою застосування перевірених розчинів
+                  для відбілювання. Це популярна косметична процедура через її здатності покращувати зовнішній вигляд посмішки
+                  людини.</p>
+                <p>Професійне відбілювання зубів Київ</p>
+                <p>Якщо ви хочете відбілити зуби у Києві, необхідна консультація, щоб визначити, чи підходить вам ця
+                  процедура. Зуби кожної людини мають певний поріг чутливості. Щоб переконатися, що ваші зуби не постраждали,
+                  вам слід обговорити процедуру зі своїм стоматологом.</p>
+                <p>Що стосується результатів і їх тривалості, залежить від способу життя людини та способу догляду за
+                  порожниною рота. При цьому ефект зазвичай триває один рік. Однак, якщо ви часто курите чи вживаєте продукти,
+                  що забарвлюють зуби, втрата кольору настане на багато швидше ніж ви того очікували.</p>
+                <p>Якщо ви хочете відбілити зуби, зверніться до нас і ми допоможемо вам у цьому.</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/08.webp" type="image/webp">
-                  <img src="img/accounts/08.png" width="215" height="42" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Дитяча стоматологія
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Стоматологічна клініка «Futurum Dentistry» пропонує послуги з вирівнювання зубів у Києві. Ми зможемо
+                  допомогти, якщо у вас:</p>
+                <p>— Проблеми із прикусом;</p>
+                <p>— Неправильне положення зубів;</p>
+                <p>— Наявність можливих ускладнень.</p>
+                <p>Процедура не вимагає ніякого додаткового знеболення та не завдає дискомфорту пацієнту. Наш професіональний
+                  лікар ортодонт у Києві проведе детальний огляд та надасть консультацію з приводу виправлення прикусу чи
+                  зміни положення зубів.</p>
+                <p>Первинний огляд дозволить скласти лікарю план лікування та рекомендації. На основі отриманої інформацію та
+                  зліпка зубів, лікар:</p>
+                <p>— Розробляє план лікування;</p>
+                <p>— Визначає вид вирівнювання;</p>
+                <p>— Визначає терміни етапів лікування;</p>
+                <p>— Складає вартість процедури.</p>
+                <p>Ви самі обираєте встановлювати встановити металеві брекети, чи можливо вам більше до вподоби керамічні
+                  брекети. Лікар врахує ваші побажання, а у разі складності вибору матеріалу, розповість про кожен тип окремо.
+                  Ціна брекетів індивідуальна, залежно від складності проблеми.</p>
+                <p>Якщо ви бажаєте вирівняти зуби — запищіться на консультацію до ортодонта!</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/09.webp" type="image/webp">
-                  <img src="img/accounts/09.png" width="151" height="37" alt="">
-                </picture>
+            </li>
+            <li class="spollers__item">
+              <button class="spollers__title" data-spoller>Протезування зубів
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect x="8" width="2" height="18" rx="1" fill="white" />
+                    <rect y="10" width="2" height="18" rx="1" transform="rotate(-90 0 10)" fill="white" />
+                  </svg>
+                </span>
+              </button>
+              <div class="spollers__body">
+                <p>Сучасна медицина має безліч варіантів повного відновлення зруйнованих або втрачених зубів. Ортопедія не
+                  вимагає задіяння природних зубів, зберігаючи їх здоров’я та красу. Наша стоматологічна клініка надає послуги
+                  протезування зубів у Києві.</p>
+                <p>Зубні коронки бувають наступних видів:</p>
+                <p>— пластмасові коронки;</p>
+                <p>— металокерамічні коронки;</p>
+                <p>— цирконієві коронки;</p>
+                <p>— керамічні коронки</p>
+                <p>— вініри (естетична стоматологія);</p>
+                <p>Існує два способи кріплення коронок:</p>
+                <p>— на корінь рідного зуба;</p>
+                <p>— на імплантований в кісткову тканину титановий імплантат.</p>
+                <p>Запишіться на консультацію в клініку «Futurum Dentistry», і кваліфіковані фахівці допоможуть вам вибрати
+                  оптимальний вигляд та форму коронок, виходячи з конкретної клінічної ситуації.</p>
               </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/10.webp" type="image/webp">
-                  <img src="img/accounts/10.png" width="181" height="60" alt="">
-                </picture>
-              </div>
-            </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="whywe">
+        <div class="whywe__container">
+          <span class="whywe__decor whywe__decor_1"></span>
+          <span class="whywe__decor whywe__decor_2"></span>
+          <span class="whywe__decor whywe__decor_3"></span>
+          <h2 class="whywe__title">Чому саме ми?</h2>
+          <ul class="whywe__columns">
+            <li class="whywe__column">Наші стоматологи — це <span>висококваліфіковані професіонали</span>, які підтримуються
+              <span>найсучаснішим</span> стоматологічним обладнанням та технологіями, що дає змогу надавати лише якісні
+              стоматологічні послуги.
+            </li>
+            <li class="whywe__column">Ми прагнемо до того, щоб пацієнти отримували <span>чудовий догляд та особисту
+                увагу</span>, а також достатній рівень співчуття та доброту. Оскільки пацієнти є нашим найважливішим
+              надбанням, мета стоматологічної клініки «Futurum Dentistry» — розвивати довготривалі, довірчі стосунки між ними.
+            </li>
+            <li class="whywe__column">Наша <span>комфортна атмосфера</span> та світлі кабінети надають пацієнтам
+              розслаблюючого відчуття перед тим, як пройти будь-яке лікування зубів. Область лікування повністю приватна,
+              оскільки ми вважаємо, що захист конфіденційності є досить важливим аспектом лікування.</li>
+            <li class="whywe__column">Якщо ви проживаєте в місті Київ або його околицях та маєте на меті покращити свою
+              посмішку, будь ласка, зверніться до нашого стоматологічного центру, щоб <span>запланувати аналіз посмішки</span>
+              та обговорити варіанти лікування. Ми сподіваємось задовольнити ваші стоматологічні потреби.</li>
+          </ul>
+          <div class="whywe__bottom">
+            <span class="whywe__bottom-decor whywe__bottom-decor_1"></span>
+            <span class="whywe__bottom-decor whywe__bottom-decor_2"></span>
+            <span class="whywe__bottom-decor whywe__bottom-decor_3"></span>
+            <span class="whywe__bottom-decor whywe__bottom-decor_4"></span>
+            <span class="whywe__bottom-decor whywe__bottom-decor_5"></span>
           </div>
         </div>
       </section>
-      <section class="benefits" id="benefits">
-        <div class="benefits__container">
-          <div class="benefits__header">
-            <h2 class="benefits__title">Benefits</h2>
-            <div class="benefits__descr">of Collaboration with Us</div>
-          </div>
-          <div class="benefits__body">
-            <div class="benefits__left left-benefits">
-              <div class="left-benefits__column left-benefits__column_1">
-                <div class="left-benefits__icon left-benefits__icon_1">
-                  <picture>
-                    <source srcset="img/benefits/01.webp" type="image/webp">
-                    <img src="img/benefits/01.png" width="193" height="118" alt="">
-                  </picture>
-                </div>
-                <div class="left-benefits__label left-benefits__label_1">Agency accounts have no spending limits per day
-                </div>
-              </div>
-              <div class="left-benefits__column left-benefits__column_2">
-                <div class="left-benefits__content">
-                  <div class="left-benefits__text">Budget starts</div>
-                  <div class="left-benefits__descr">from $300</div>
-                </div>
-              </div>
-              <div class="left-benefits__column left-benefits__column_3">
-                <div class="left-benefits__icon left-benefits__icon_2">
-                  <picture>
-                    <source srcset="img/benefits/02.webp" type="image/webp">
-                    <img src="img/benefits/02.png" width="140" height="123" alt="">
-                  </picture>
-                </div>
-                <div class="left-benefits__label left-benefits__label_2">Our accounts are highly trusted</div>
-              </div>
+
+      <section class="callback">
+        <div class="callback__container">
+          <div class="callback__body">
+            <div class="callback__image">
+              <picture>
+                <source srcset="img/callback-man.webp, img/callback-man@2x.webp 2x" type="image/webp">
+                <img srcset="img/callback-man@2x.png 2x" src="img/callback-man.png" width="300" height="448" alt="">
+              </picture>
             </div>
-            <div class="benefits__right right-benefits">
-              <div class="right-benefits__column right-benefits__column_1">
-                <picture>
-                  <source srcset="img/benefits/bg.webp" type="image/webp">
-                  <img class="right-benefits__bg" src="img/benefits/bg.jpg" width="692" height="377" alt="">
-                </picture>
-                <div class="right-benefits__descr">Low probability of bans
-                  compared to depositing by card</div>
-              </div>
-              <div class="right-benefits__bottom">
-                <div class="right-benefits__column right-benefits__column_2">
-                  <div class="right-benefits__label">Low commission rates compared to the market</div>
-                  <div class="right-benefits__icon right-benefits__icon_1">
-                    <picture>
-                      <source srcset="img/benefits/03.webp" type="image/webp">
-                      <img width="140" height="140" src="img/benefits/03.png" alt="">
-                    </picture>
-                  </div>
-                </div>
-                <div class="right-benefits__column right-benefits__column_3">
-                  <div class="right-benefits__icon right-benefits__icon_2">
-                    <picture>
-                      <source srcset="img/benefits/04.webp" type="image/webp">
-                      <img height="185" width="185" src="img/benefits/04.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="right-benefits__label">Ability to refund the budget and transfer balance between accounts
-                    in case of a ban</div>
-                </div>
-              </div>
+            <div class="callback__right">
+              <h2 class="callback__title">Записатись на прийом</h2>
+              <a class="callback__btn" href="">
+                <img src="img/icons/tg.svg" width="24" height="24" alt="">
+                Перейти у Telegram
+              </a>
             </div>
-          </div>
-          <div class="benefits__bottom">
-            <a class="benefits__btn btn" href="#managers">CONTACT US</a>
-          </div>
-        </div>
-      </section>
-      <section class="accounts">
-        <div class="accounts__container">
-          <h2 class="accounts__label">TRUE AGENCY ACCOUNTS</h2>
-          <div class="accounts__slider swiper">
-            <div class="accounts__wrapper swiper-wrapper">
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/01.webp" type="image/webp">
-                  <img src="img/accounts/01.png" width="276" height="104" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/02.webp" type="image/webp">
-                  <img src="img/accounts/02.png" width="130" height="130" alt="">
-                </picture>
-              </div>
-              <!-- <div class="accounts__slide swiper-slide">
-								<picture><source srcset="img/accounts/03.webp" type="image/webp"><img src="img/accounts/03.png" width="180" height="90" alt=""></picture>
-							</div> -->
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/04.webp" type="image/webp">
-                  <img src="img/accounts/04.png" width="122" height="68" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/05.webp" type="image/webp">
-                  <img src="img/accounts/05.png" width="180" height="32" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/06.webp" type="image/webp">
-                  <img src="img/accounts/06.png" width="296" height="155" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/07.webp" type="image/webp">
-                  <img src="img/accounts/07.png" width="266" height="100" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/08.webp" type="image/webp">
-                  <img src="img/accounts/08.png" width="215" height="42" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/09.webp" type="image/webp">
-                  <img src="img/accounts/09.png" width="151" height="37" alt="">
-                </picture>
-              </div>
-              <div class="accounts__slide swiper-slide">
-                <picture>
-                  <source srcset="img/accounts/10.webp" type="image/webp">
-                  <img src="img/accounts/10.png" width="181" height="60" alt="">
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="managers" id="managers">
-        <div class="managers__container">
-          <h2 class="managers__title title">
-            <span></span>OUR SALES MANAGERS
-          </h2>
-          <div class="managers__body">
-            <div class="managers__top">
-              <ul class="managers__list">
-                <li class="managers__item">
-                  <div class="managers__user">
-                    <img src="img/managers/01.jpg" width="130" height="130" alt="Paul 
-										Statkevich">
-                  </div>
-                  <div class="managers__name">Paul
-                    <br> Statkevich
-                  </div>
-                </li>
-                <li class="managers__item">
-                  <div class="managers__user">
-                    <img src="img/managers/02.jpg" width="130" height="130" alt="Paul 
-										Statkevich">
-                  </div>
-                  <div class="managers__name">Andrew
-                    <br>
-                    Ostapenko
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="managers__descr">Our sales managers will advise you on how to start working with us, fill out
-              the contact form!</div>
-            <form class="managers__form form-managers" action="#">
-              <div class="form-managers__label">Fill out the contact form!</div>
-              <div class="form-managers__body">
-                <div class="form-managers__line form-managers__line_name">
-                  <input class="input form-managers__input" autocomplete="off" type="text" name="name"
-                    placeholder="Name">
-                </div>
-                <div class="form-managers__line form-managers__line_phone">
-                  <input class="input form-managers__input" autocomplete="off" type="text" name="phone"
-                    placeholder="Phone / Messengers">
-                </div>
-                <div class="form-managers__line form-managers__line_mail">
-                  <input class="input form-managers__input" autocomplete="off" type="text" name="mail"
-                    placeholder="Mail">
-                </div>
-                <button data-popup="#thanks" class="form-managers__btn btn">SEND YOUR FORM</button>
-              </div>
-            </form>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__wrapper">
-          <div class="footer__left">
-            <a class="footer__logo" target="_blank" href="http://agency.scroogefrog.com/">
-              <img src="img/logo.svg" width="306" height="36" alt="ScroogeFrog Agency logotype">
-            </a>
-            <ul class="footer__list" data-da=".right-footer, 991">
-              <li class="footer__item">
-                <a class="footer__link" href="terms.html">Terms of Service</a>
+        <ul class="footer__columns">
+          <li class="footer__column column-footer">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <address class="column-footer__address">
+                  м. Київ, вул. Ломоносова 34/1А
+                  <br>
+                  (м. Васильківська)
+                </address>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="policy.html">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__contacts contact-footer">
-            <div class="contact-footer__label">Contacts</div>
-            <ul class="contact-footer__list">
-              <li class="contact-footer__item">
-                <a class="contact-footer__link contact-footer__link_phone" href="tel:+3726980475">+372 698 0475
-                  (Estonia)</a>
-              </li>
-              <li class="contact-footer__item">
-                <a class="contact-footer__link contact-footer__link_phone" href="tel:+6531252798">+653 125 2798
-                  (Singapure)</a>
-              </li>
-              <li class="contact-footer__item">
-                <a class="contact-footer__link contact-footer__link_mail"
-                  href="mailto:info@scroogefrog.com">info@scroogefrog.com</a>
+              <li class="column-footer__item">
+                <a class="column-footer__phone" href="tel:+380500230145">+380500230145</a>
               </li>
             </ul>
-            <ul class="contact-footer__socials">
-              <li class="contact-footer__social">
-                <a class="contact-footer__social-link" target="_blank" href="https://wa.me/qr/ZQKCFUYAKFAAA1">
-                  <img src="img/icons/socials/whatsapp.svg" width="31" height="31" alt="Whatsapp">
-                </a>
+          </li>
+          <li class="footer__column column-footer">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <address class="column-footer__address">
+                  м. Київ, вул. Жилянська, 74
+                  <br>
+                  (м. Олімпійська)
+                </address>
               </li>
-              <li class="contact-footer__social">
-                <a class="contact-footer__social-link" target="_blank"
-                  href="https://join.skype.com/invite/O8kAOG0Ythzu">
-                  <img src="img/icons/socials/skype.svg" width="31" height="31" alt="Skype">
-                </a>
-              </li>
-              <li class="contact-footer__social">
-                <a class="contact-footer__social-link" target="_blank" href="https://t.me/agency_scroogefrog">
-                  <img src="img/icons/socials/tg.svg" width="31" height="31" alt="Telegram">
-                </a>
+              <li class="column-footer__item">
+                <a class="column-footer__phone" href="tel:+380960230142">+380960230142</a>
               </li>
             </ul>
-          </div>
-          <div class="footer__right right-footer">
-            <div class="right-footer__label">We in social networks</div>
-            <ul class="right-footer__socials">
-              <li class="right-footer__social">
-                <a class="right-footer__social-link" target="_blank" href="https://www.facebook.com/scroogefrog.aa">
+          </li>
+          <li class="footer__column column-footer">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <address class="column-footer__address">
+                  м. Київ, вул. Петра Чаадаєва, 2В
+                  <br>
+                  (парк Совки)
+                </address>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__phone" href="tel:+380960230148">+380960230148</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer__bottom bottom-footer">
+          <a class="bottom-footer__policy" href="">Політика конфіденційності</a>
+          <div class="bottom-footer__contacts contacts-footer">
+            <a class="contacts-footer__email" href="mailto:futurum.dentistry@gmail.com">futurum.dentistry@gmail.com</a>
+            <ul class="contacts-footer__socials">
+              <li class="contacts-footer__social">
+                <a class="contacts-footer__link" href="">
                   Facebook
-                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_127_586)">
-                      <path
-                        d="M32.2398 16.2179C32.2398 24.2631 26.3372 30.9327 18.6319 32.1431V20.9088H22.3785L23.0918 16.2609H18.6319V13.2452C18.6319 11.973 19.2552 10.7345 21.2514 10.7345H23.2785V6.77704C23.2785 6.77704 21.4381 6.4627 19.6797 6.4627C16.0071 6.4627 13.6079 8.68859 13.6079 12.7172V16.2596H9.52552V20.9075H13.6079V32.1417C5.90392 30.93 0 24.2618 0 16.2179C0 7.31571 7.21769 0.0980225 16.1199 0.0980225C25.0221 0.0980225 32.2398 7.31437 32.2398 16.2179Z"
-                        fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_127_586">
-                        <rect width="32.2398" height="32.2398" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <img src="img/icons/socials/fb.svg" width="31" height="31" alt="">
                 </a>
               </li>
-              <li class="right-footer__social">
-                <a class="right-footer__social-link" target="_blank" href="https://twitter.com/scroogefrog">
-                  Twitter
-                  <svg width="33" height="29" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_127_589)">
-                      <path
-                        d="M29.4189 10.1988C29.4377 10.469 29.4377 10.7404 29.4377 11.0131C29.4377 19.3441 22.7829 28.9503 10.6177 28.9503V28.9452C7.02433 28.9503 3.50481 27.9696 0.479645 26.1195C1.0022 26.1797 1.52744 26.2091 2.05402 26.2104C5.03352 26.213 7.92704 25.2604 10.2685 23.5064C7.43807 23.4552 4.95561 21.696 4.08916 19.1277C5.08054 19.3095 6.10146 19.2724 7.07537 19.0202C3.98841 18.4261 1.76924 15.8412 1.76924 12.8401C1.76924 12.8132 1.76924 12.7863 1.76924 12.7607C2.68942 13.2498 3.7184 13.52 4.77157 13.5494C1.86461 11.6994 0.967272 8.01462 2.723 5.13392C6.08131 9.07216 11.0368 11.4663 16.3551 11.7211C15.8218 9.53179 16.5512 7.23747 18.268 5.69726C20.9318 3.30948 25.1216 3.43239 27.6269 5.97124C29.1086 5.69342 30.5285 5.17489 31.8275 4.44127C31.3332 5.90083 30.3001 7.14017 28.9192 7.92884C30.2316 7.77904 31.5118 7.44488 32.7195 6.93532C31.8315 8.20155 30.7139 9.30646 29.4189 10.1988Z"
-                        fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_127_589">
-                        <rect width="32.2398" height="28.371" fill="white" transform="translate(0.479645 0.579224)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                </a>
-              </li>
-              <li class="right-footer__social">
-                <a class="right-footer__social-link" target="_blank"
-                  href="https://www.linkedin.com/company/scroogefrog/">
-                  LinkedIn
-                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M24.1867 23.687H20.1473V17.4728C20.1473 15.9908 20.1204 14.0839 18.0463 14.0839C15.9427 14.0839 15.6203 15.6978 15.6203 17.3659V23.687H11.5823V10.9075H15.4604V12.6534H15.5142C16.3054 11.3258 17.775 10.5327 19.34 10.5895C23.4344 10.5895 24.188 13.2354 24.188 16.6757L24.1867 23.687ZM7.02439 9.1603C5.72942 9.1603 4.68029 8.12965 4.68029 6.85751C4.68029 5.58537 5.72942 4.55473 7.02439 4.55473C8.31935 4.55473 9.36848 5.58537 9.36848 6.85751C9.36848 8.12965 8.31935 9.1603 7.02439 9.1603ZM9.0434 23.687H5V10.9075H9.0434V23.687ZM26.2003 0.870274H2.97024C1.87275 0.858397 0.972723 1.72277 0.95929 2.80092V25.7153C0.972723 26.7947 1.87275 27.6591 2.97024 27.6472H26.2003C27.3005 27.6604 28.2045 26.7961 28.2193 25.7153V2.7996C28.2032 1.71881 27.2991 0.854438 26.2003 0.868955"
-                      fill="white" />
-                  </svg>
-
-                </a>
-              </li>
-              <li class="right-footer__social">
-                <a class="right-footer__social-link" target="_blank" href="https://t.me/ScroogeFrog">
-                  Telegram
-                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_127_582)">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16.4005 0C7.49824 0 0.280548 7.21769 0.280548 16.1199C0.280548 25.0221 7.49824 32.2398 16.4005 32.2398C25.3027 32.2398 32.5204 25.0221 32.5204 16.1199C32.5204 7.21769 25.3027 0 16.4005 0ZM23.872 10.9629C23.6302 13.5112 22.5798 19.6972 22.0465 22.5518C21.8208 23.7607 21.3748 24.1651 20.9449 24.204C20.0086 24.29 19.298 23.5848 18.3913 22.991C16.9727 22.0614 16.1707 21.4825 14.7938 20.5744C13.202 19.5252 14.2337 18.949 15.1404 18.0073C15.3782 17.7601 19.5022 14.0082 19.5828 13.6683C19.5922 13.6254 19.6029 13.4668 19.5076 13.3836C19.4122 13.3003 19.2738 13.3285 19.1744 13.3513C19.032 13.3836 16.7658 14.8814 12.3745 17.8447C11.7311 18.2867 11.1481 18.5016 10.6255 18.4909C10.0506 18.4788 8.94366 18.1658 8.1202 17.8971C7.11136 17.5694 6.30805 17.3947 6.3779 16.8386C6.41417 16.5484 6.81314 16.2516 7.57615 15.948C12.2751 13.9007 15.4091 12.5507 16.9767 11.8978C21.454 10.036 22.3836 9.71224 22.9908 9.7015C23.7511 9.69075 23.9338 10.3181 23.872 10.9629Z"
-                        fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_127_582">
-                        <rect width="32.2398" height="32.2398" fill="white" transform="translate(0.280548)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                </a>
-              </li>
-              <li class="right-footer__social">
-                <a class="right-footer__social-link" target="_blank"
-                  href="https://www.reddit.com/user/ScroogeFrogAgency/">
-                  Reddit
-                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_127_591)">
-                      <path
-                        d="M13.1855 19.4782C12.26 19.4782 11.5064 18.7246 11.5064 17.799C11.5064 16.8735 12.26 16.1199 13.1855 16.1199C14.1111 16.1199 14.8647 16.8735 14.8647 17.799C14.8647 18.7246 14.1111 19.4782 13.1855 19.4782Z"
-                        fill="white" />
-                      <path
-                        d="M20.8703 21.6208C21.0409 21.7914 21.0395 22.0668 20.8703 22.236C19.7244 23.3806 17.5281 23.4692 16.8819 23.4692C16.2358 23.4692 14.0395 23.3806 12.895 22.236C12.7243 22.0654 12.7243 21.7914 12.895 21.6208C13.0656 21.4502 13.3396 21.4502 13.5102 21.6208C14.2329 22.3435 15.7777 22.5987 16.8819 22.5987C17.9862 22.5987 19.531 22.3422 20.255 21.6195C20.4256 21.4502 20.701 21.4502 20.8703 21.6208Z"
-                        fill="white" />
-                      <path
-                        d="M22.2534 17.799C22.2534 18.7259 21.4998 19.4782 20.5742 19.4782C19.6473 19.4782 18.8951 18.7246 18.8951 17.799C18.8951 16.8735 19.6487 16.1199 20.5742 16.1199C21.4998 16.1199 22.2534 16.8735 22.2534 17.799Z"
-                        fill="white" />
-                      <path
-                        d="M16.8801 0C7.97787 0 0.760178 7.21769 0.760178 16.1199C0.760178 25.0221 7.97787 32.2398 16.8801 32.2398C25.7823 32.2398 33 25.0221 33 16.1199C33 7.21769 25.7823 0 16.8801 0ZM26.2256 18.2679C26.2619 18.5003 26.2807 18.7354 26.2807 18.9745C26.2807 22.5907 22.0707 25.5232 16.8774 25.5232C11.6841 25.5232 7.47412 22.5907 7.47412 18.9745C7.47412 18.734 7.49427 18.4976 7.53054 18.2639C6.71245 17.8958 6.14154 17.075 6.14154 16.1199C6.14154 14.8209 7.19336 13.7691 8.49236 13.7691C9.12372 13.7691 9.69598 14.0189 10.1178 14.4246C11.7459 13.2519 13.9946 12.5023 16.4972 12.4325L17.6928 6.81066C17.7156 6.70185 17.7815 6.60648 17.8741 6.54603C17.9668 6.48558 18.081 6.46408 18.1898 6.48692L22.0962 7.3171C22.3716 6.76499 22.9371 6.3808 23.5967 6.3808C24.5236 6.3808 25.2759 7.13306 25.2759 8.05995C25.2759 8.98685 24.5236 9.73911 23.5967 9.73911C22.6967 9.73911 21.9673 9.02849 21.9256 8.13921L18.4276 7.39501L17.357 12.4325C19.8233 12.5185 22.0371 13.268 23.6437 14.4273C24.0669 14.0203 24.6405 13.7677 25.2745 13.7677C26.5735 13.7677 27.6253 14.8196 27.6253 16.1186C27.624 17.079 27.0491 17.9025 26.2256 18.2679Z"
-                        fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_127_591">
-                        <rect width="32.2398" height="32.2398" fill="white" transform="translate(0.760178)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
+              <li class="contacts-footer__social">
+                <a class="contacts-footer__link" href="">
+                  Instagram
+                  <img src="img/icons/socials/inst.svg" width="31" height="31" alt="">
                 </a>
               </li>
             </ul>
-            <div class="right-footer__descr">*Our operations are limited to verticals that are in accordance with the
-              policies
-              of Meta Ads and other similar advertising networks</div>
-            <small class="right-footer__copy">© 2007 — 2023 All rights reserved.</small>
           </div>
+          <small class="bottom-footer__copy">
+            © Futurum Dentistry., 2023 р. Усі права захищено.
+          </small>
         </div>
       </div>
     </footer>
   </div>
 
-  <div class="popup" id="thanks" aria-hidden="true">
-    <div class="popup__wrapper">
-      <div class="popup__content">
-        <button class="popup__close" data-close type="button">Close popup</button>
-        <div class="popup__body">
-          <div class="popup__icon">
-            <picture>
-              <source srcset="img/accounts/decor.webp" type="image/webp">
-              <img src="img/accounts/decor.png" width="127" height="161" alt="">
-            </picture>
-          </div>
-          <div class="popup__right">
-            <p class="popup__text">Thank you for your request!</p>
-            <p class="popup__text">Our manager will contact you</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/app.min.js?_v=20230905172447"></script>
+  <script src="js/app.min.js?_v=20231112131006"></script>
 
 </body>
 
